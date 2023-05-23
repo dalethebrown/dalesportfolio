@@ -80,9 +80,9 @@ h1 span {
     max-height: 30vh;
     width: auto;
     position: relative;
-    top: 5vh;
+    top: 10vh;
     right: -3vw;
-    transition: transform 1s ease-in-out;
+    display: flex;
 }
 
 .bio {
@@ -98,7 +98,7 @@ h2 {
 
 .bio h2 {
     box-sizing: border-box;
-    padding: 15vh;
+    padding: 15vh 0;
     background-color: orange;
     width: 40vw;
     display: flex;
@@ -129,10 +129,12 @@ h2 {
     max-width: 900vw;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .projects h2 {
     background-color: #2b790a;
+    box-sizing: border-box;
     display: flex;
     padding: 20vh;
     align-content: center;
@@ -232,6 +234,7 @@ h3 {
 
 .skills h2 {
     background-color: #2b790a;
+    box-sizing: border-box;
     display: flex;
     padding: 20vh;
     align-content: center;
@@ -250,7 +253,6 @@ h3 {
     padding: 10vh 0;
     position: relative;
 }
-
 
 .skills img {
     height: 7vw;
@@ -292,26 +294,58 @@ h3 {
     color: blueviolet;
 }
 
-@media only screen and (max-width: 900px) {
+/* TABLET  */
+
+@media only screen and (min-width: 480px) and (max-width: 935px) {
+    header {
+        display: flex;
+        justify-items: space-around;
+        align-items: center;
+    }
+   
     h1 {
         font-size: 4rem;
     }
 
+    .box2 {
+        position: relative;
+        top: 0;
+
+    }
+
+    #dale {
+        max-width: 30vw;
+        height: auto;
+        position: relative;
+        top: -10vh;
+        right: -20vw;
+    }
+
+    .bio {
+        display: block;
+    }
+
     .bio h2 {
-    padding: 10vw 5vw;
-    width: 40vw;
-    display: flex;
-    font-size: 2rem;
+        padding: 10vh 5vw;
+        width: 100vw;
+        font-size: 2rem;
+        box-sizing: border-box;
     }
-
+    
     .bio p {
-        padding: 10vw 4vh;
-        width: 60vw;
+        padding: 4vw;
+        width: 100vw;
         font-size: 0.8rem;
+        display: flex;
+        text-align: left;
     }
-
 
     .projects h2 {
+        padding: 10vw 0;
+        border: 3vw solid whitesmoke;
+    }
+
+    .skills h2 {
         padding: 10vw;
         border: 3vw solid whitesmoke;
     }
@@ -320,6 +354,20 @@ h3 {
         max-width: 100vw;
         height: 70vh;
     }
+
+    #mmm, #guess {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      #mmm h3, #guess h3 {
+        font-size: 2rem;
+      }
+    
+      #mmm img, #guess img {
+        max-width: 100%;
+        height: auto;
+      }
     
     #mmm h3 {
         font-size: 2rem;
@@ -333,7 +381,7 @@ h3 {
     #mmm p {
         display: flex;
         justify-content: center;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         padding: 0 3vw;
         height: 15vh;
     }
@@ -355,22 +403,128 @@ h3 {
     #guess p {
         display: flex;
         justify-content: center;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         padding: 0 3vw;
         height: 15vh;
     }
 
+}
 
+@media only screen and (max-width: 480px) {
+    li a {
+        font-size: 0.8rem;
+    }
 
-    .skills h2 {
-        padding: 10vw;
+    header {
+        display: flex;
+        justify-items: space-around;
+        align-items: center;
+    }
+   
+    h1 {
+        font-size: 2rem;
+    }
+
+    .box2 {
+        position: relative;
+        top: 0;
+
+    }
+
+    #dale {
+        max-width: 30vw;
+        height: auto;
+        position: relative;
+        top: -2vh;
+        right: -20vw;
+    }
+
+    .bio {
+        display: block;
+    }
+
+    .bio h2 {
+        padding: 10vw 5vw;
+        width: 100vw;
+        font-size: 2rem;
+        box-sizing: border-box;
+    }
+    
+    .bio p {
+        padding: 5vw;
+        width: 100vw;
+        font-size: 0.8rem;
+        display: flex;
+        text-align: left;
+    }
+
+    .projects h2 {
+        padding: 10vw 0;
+        max-width: 100vw;
         border: 3vw solid whitesmoke;
     }
 
-}
+    .skills h2 {
+        padding: 10vw;
+        max-width: 100vw;
+        border: 3vw solid whitesmoke;
+    }
 
-@media only screen and (max-width: 4200px) {
-    #dale {
-        flex-shrink: 3;
+    #mmm {
+        max-width: 100vw;
+        height: auto;
+    }
+
+    #mmm, #guess {
+        max-width: 100%;
+        height: 65vh;
+      }
+    
+      #mmm h3, #guess h3 {
+        font-size: 1rem;
+      }
+    
+      #mmm img, #guess img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+    #mmm h3 {
+        font-size: 2rem;
+    }
+
+    #mmm img {
+        max-width: 100vw;
+        height: auto;
+    }
+    
+    #mmm p {
+        display: flex;
+        justify-content: center;
+        font-size: 0.6rem;
+        padding: 0 3vw;
+        height: 15vh;
+    }
+
+    #guess {
+        max-width: 100vw;
+        height: 70vh;
+    }
+    
+    #guess h3 {
+        font-size: 2rem;
+    }
+
+    #guess img {
+        max-width: 100vw;
+        height: auto;
+    }
+    
+    #guess p {
+        display: flex;
+        justify-content: center;
+        font-size: 0.6rem;
+        padding: 0 3vw;
+        height: 15vh;
     }
 }
