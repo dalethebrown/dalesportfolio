@@ -76,12 +76,13 @@ h1 span {
     top: -10vh;
 }
 
-.box2 img {
+#dale {
     max-height: 30vh;
     width: auto;
     position: relative;
     top: 5vh;
     right: -3vw;
+    transition: transform 1s ease-in-out;
 }
 
 .bio {
@@ -101,7 +102,7 @@ h2 {
     background-color: orange;
     width: 40vw;
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     margin: 0;
     text-align: center;
@@ -131,7 +132,7 @@ h2 {
 }
 
 .projects h2 {
-    background-color: darkolivegreen;
+    background-color: #2b790a;
     display: flex;
     padding: 20vh;
     align-content: center;
@@ -226,10 +227,11 @@ h3 {
     max-width: 900vw;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .skills h2 {
-    background-color: darkolivegreen;
+    background-color: #2b790a;
     display: flex;
     padding: 20vh;
     align-content: center;
@@ -246,10 +248,129 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     padding: 10vh 0;
+    position: relative;
 }
 
 
 .skills img {
     height: 7vw;
     width: auto;
+    position: relative;
+    z-index: 1;
+}
+
+#contactbod {
+    background-color: orange;
+}
+
+#contactmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+}
+
+#contactmain img {
+    height: 60vh;
+    width: auto;
+}
+
+#contactmain li {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    list-style: none;
+}
+
+#contactmain a {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 3rem;
+}
+
+#contactbod a:hover {
+    color: blueviolet;
+}
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .bio h2 {
+    padding: 10vw 5vw;
+    width: 40vw;
+    display: flex;
+    font-size: 2rem;
+    }
+
+    .bio p {
+        padding: 10vw 4vh;
+        width: 60vw;
+        font-size: 0.8rem;
+    }
+
+
+    .projects h2 {
+        padding: 10vw;
+        border: 3vw solid whitesmoke;
+    }
+
+    #mmm {
+        max-width: 100vw;
+        height: 70vh;
+    }
+    
+    #mmm h3 {
+        font-size: 2rem;
+    }
+
+    #mmm img {
+        max-width: 100vw;
+        height: auto;
+    }
+    
+    #mmm p {
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
+        padding: 0 3vw;
+        height: 15vh;
+    }
+
+    #guess {
+        max-width: 100vw;
+        height: 70vh;
+    }
+    
+    #guess h3 {
+        font-size: 2rem;
+    }
+
+    #guess img {
+        max-width: 100vw;
+        height: auto;
+    }
+    
+    #guess p {
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
+        padding: 0 3vw;
+        height: 15vh;
+    }
+
+
+
+    .skills h2 {
+        padding: 10vw;
+        border: 3vw solid whitesmoke;
+    }
+
+}
+
+@media only screen and (max-width: 4200px) {
+    #dale {
+        flex-shrink: 3;
+    }
 }

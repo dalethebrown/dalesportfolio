@@ -6,50 +6,57 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Contact</li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="/Dales Portfolio/contact.html">Contact</a></li>
             </ul>
         </nav>
         <header>
             <div class="box1">
-                <h1> Dale Brown</h1>
+                <h1> Dale
+                    <br>
+                    <span>Brown</span></h1>
             </div>
             <div class="box2">
-                <img src="/Dales Portfolio/Dale Brown.png">
+                <img src="/Dales Portfolio/Dale Brown.png" id="dale">
             </div>
         </header>
         <main>
-            <section class="bio">
+            <section class="bio" id="aboutme">
                 <h2>About Me</h2>
-                <p>Insert Content</p>
+                <p>Dale is an expereinced professional from Port Macquarie, pivoting careers into the tech industry and looking for opportunities to develop skills as a software developer while benefiting projects he's passionate about. He aims to become a full-stack developer into the future, and loves finding creative solutions for clients. </p>
             </section>
             <section class="projects">
-                <div id="mmm" role="presentation">
+                <h2>Projects</h2>
+                <div class="project" id="mmm" role="presentation">
                     <h3>MMM Tasty Treats</h3>
                     <img src="/Dales Portfolio/MMM.png" alt="screenshot of mmm tasty treats webpage">
-                    <p>insert info</p>
+                    <p>This website was created to showcase items for sale from the prestegious home bakery MMM Tasty Treats. I used my newly developed skills in html and css to create the design.</p>
                 </div>
                 <div id="guess" role="presentation">
                     <h3>Number Guesser</h3>
                     <img src="/Dales Portfolio/number guesser.png" alt="screenshot of number guesser webpage">
-                    <p>insert info</p>
+                    <p>This website was created to play a guessing game against a computer. I used my newly developed skills in html, css and js to create the design.</p>
                 </div>
             </section>
             <section class="skills">
                 <h2>Skills</h2>
-                <img src="/Dales Portfolio/html.png" alt="html 5 logo">
-                <img src="/Dales Portfolio/css.png" alt="css 3 logo">
-                <img src="/Dales Portfolio/js.png" alt="javascript logo">
-                <img src="/Dales Portfolio/chrome.svg" alt="chrome logo">
-                <img src="/Dales Portfolio/git.png" alt="git logo">
-                <img src="/Dales Portfolio/github.png" alt="github logo">
-                <img src="/Dales Portfolio/python.png" alt="python logo">
+                <div id="skillimages" role="presentation">
+                    <img src="/Dales Portfolio/html.png" alt="html 5 logo" id="html">
+                    <img src="/Dales Portfolio/css.png" alt="css 3 logo" id="css">
+                    <img src="/Dales Portfolio/js.png" alt="javascript logo" id="js">
+                    <img src="/Dales Portfolio/chrome.svg" alt="chrome logo" id="chrome">
+                    <img src="/Dales Portfolio/git.png" alt="git logo" id="git">
+                    <img src="/Dales Portfolio/github.png" alt="github logo" id="github">
+                    <img src="/Dales Portfolio/python.png" alt="python logo" id="python">
+                </div>
             </section>
         </main>
     </body>
+    <script src="/Dales Portfolio/main.js"></script>
 </html>
